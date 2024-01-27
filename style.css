@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+    color: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#loader {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    padding-top: 15vh;
+    padding-left: 10vw;
+}
+
+.load {
+    display: flex;
+    align-items: center;
+
+}
+
+.load h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2vw;
+    width: 16vw;
+}
+
+#timer h4 {
+    font-size: 4vw;
+    font-family: "silk serif";
+    font-weight: 100;
+}
+
+#timer h5 {
+    font-size: 4vw;
+    font-weight: 100;
+    font-family: "silk serif";
+
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: salmon;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(161, 129, 126);
+}
