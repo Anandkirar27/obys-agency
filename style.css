@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Gilroy";
+    font-family:"plain light";
     color: #fff;
 }
 
@@ -12,6 +12,10 @@ body {
     height: 100%;
 }
 
+#main{
+    background-color: #151515;
+}
+
 #loader {
     height: 100vh;
     width: 100%;
@@ -19,18 +23,70 @@ body {
     position: fixed;
     padding-top: 15vh;
     padding-left: 10vw;
+    z-index:99999;
+    display: none;
 }
 
 .load {
     display: flex;
     align-items: center;
-
+    height: 18vh;
 }
 
 .load h1 {
     font-size: 7vw;
     text-transform: uppercase;
 
+}
+
+.load h2{
+    margin-left: 2vw;
+    font-size: 7vw;
+    font-family: "Plain Light";
+    text-transform: uppercase;
+    animation-name: now;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes now {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 1;
+        color: white;
+        font-weight: 100;
+    }
+    45%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 0;
+        color: white;
+        font-weight: 100;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        opacity: 1;
+        color: transparent;
+        font-weight: 100;
+    }
+
+    95%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        opacity: 0;
+        color: transparent;
+        font-weight: 100;
+    }
+    100%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px transparent;
+        opacity: 1;
+        color: white;
+        font-weight: 100;
+    }
 }
 
 #timer {
@@ -57,11 +113,176 @@ body {
 #page1 {
     height: 100vh;
     width: 100%;
-    background-color: salmon;
+    position: relative;
 }
 
+.mousefollower{
+    height: 40px;
+    width: 40px;
+    background-color: transparent !important;
+    mix-blend-mode: normal;
+    border: 1px solid #fff;
+}
+
+#nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw 5vw;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: flex-start;
+    gap: 18vw;
+}
+
+#nav-part1 h2{
+    font-size: 1vw;
+    font-weight: 100;
+    line-height: 1vw;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: flex-start;
+    gap: 3vw;
+}
+
+#nav h4{
+    font-size: 1vw;
+}
+
+#content{
+    padding-left: 28vw;
+    padding-top: 5vw;
+}
+
+.text{
+   overflow: hidden;
+    height: 7.5vw;
+}
+
+.text h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    line-height: 7.5vw;
+    text-transform: uppercase;
+}
 #page2 {
     height: 100vh;
     width: 100%;
-    background-color: rgb(161, 129, 126);
+    padding: 7vw 0;
+    padding-left: 28vw;
+    position: relative;
+}
+
+#video-container{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#video-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container video{
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left:0;
+   opacity: 0;
+   width: 100%;
+   object-fit: cover;
+}
+
+#play-btn{
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 67%;
+    top: -10%;
+    background-color: #FFA63D;
+    z-index: 9;
+}
+
+#play-btn i{
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+#page3{
+    min-height: 100vh;
+    padding: 3vw;
+}
+
+.text-container{
+    padding-left: 28vw;
+}
+
+.text-container h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.text-container .line{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+
+.image-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.images{
+    height: 40vw;
+    width: 30vw;
+    overflow: hidden;
+    margin: 2vw;
+}
+
+.images:nth-child(1){
+    height: 30vw;
+    width: 25vw;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-container{
+    height: 22vw;
+    width: 22vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle-container-1{
+    margin-top: 18vw;
+}
+
+.circle-container svg{
+    height: 120px;
+}
+
+#circle-container-2 svg{
+    rotate: -45deg;
 }
