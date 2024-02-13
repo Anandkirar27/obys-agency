@@ -286,3 +286,146 @@ body {
 #circle-container-2 svg{
     rotate: -45deg;
 }
+
+.circle-container .circle-in{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    scale: 0;
+    transition: all ease .5s;
+}
+
+.circle-in p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    transition-delay: 0.5s;
+   
+}
+
+.circle-container:hover .circle-in{
+    scale: 1;
+}
+
+.circle-container:hover .circle-in p{
+    scale: 1;
+}
+
+._canvas_container{
+    z-index: 9999999 !important;
+}
+
+/* #page4{
+    height: 100vh;
+    width: 100%;
+    padding: 3vh 0;
+   
+}
+
+.page4-mark{
+    background-color: red;
+    white-space: nowrap;
+    height: 17vh;
+}
+
+.page4-marking{
+    background-color: green;
+    white-space: nowrap;
+    height: 17vh;
+} */
+
+#footer{
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 10vh;
+    padding-left: 28vw;
+
+}
+
+.footer-text{
+   
+    position: relative;
+    height: 12vh;
+}
+
+.footer-text h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    -webkit-text-stroke:#fff;
+    letter-spacing: 1px;
+    
+}
+
+.footer-text h2{
+    font-size: 7vw;
+    text-transform: uppercase;
+    letter-spacing: 1px #fff;
+    font-weight: 100;
+    position: absolute;
+    height: 20vh;
+    top: -14%;
+    left:0;
+    opacity: 1;
+}
+
+#footer h2 span{
+    -webkit-text-stroke:1px #fff;
+    color: transparent;
+    opacity: 0;
+    font-family: 'silk serif';
+}
+
+#footer .underline{
+    height: 1.5px;
+    width: 100%;
+    margin: 5vw 0;
+    background-color: #fff;
+}
+
+#footer-btm{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#foot-div1{
+    background-color: red;
+    width: 25%;
+}
+
+.social-heading{
+    margin-bottom: 2vw;
+}
+
+.social-heading h6{
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    
+}
+
+.social-div{
+    /* background-color: red; */
+    height: 2.2vw;
+    overflow: hidden;
+
+}
+
+.social-div h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    transition: all ease 0.6s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.social-div:hover h5{
+    transform: translateY(-100%);
+}
