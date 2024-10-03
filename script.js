@@ -42,13 +42,13 @@ function loader(){
         duration: 0.7,
         delay: 0.2,
         stagger : 0.2
-    })
+    });
  
     tl.to(".load",{
         opacity:0,
         delay:1.6,
         stagger:-0.2
-    })
+    });     
    
   
     var timer = document.querySelector("#timer h4");
@@ -58,17 +58,20 @@ function loader(){
             grow++;
             timer.innerHTML = grow;
          }
-     },8)
+         else {
+            clearInterval(int);
+         }
+     },1)
     
     setTimeout(function(){
         clearInterval(int);
+        tl.to("#loader",{
+            top:"-100%",
+            duration:2,
+            ease : "power4.out"
+        });
     },1500)
 
-    tl.to("#loader",{
-        top:"-100%",
-        duration:2,
-        ease : "power4.out"
-    })
 }
 
 loader();
@@ -76,7 +79,6 @@ loader();
 function page2Animation(){
     var videoC = document.querySelector("#video-container");
     videoC.addEventListener("mouseenter",function(){
-        console.log("mouse enter hua")
         gsap.to(".mousefollower",{
             opacity:0
         })
@@ -155,6 +157,39 @@ function sheryAnimation(){
 }
 
 sheryAnimation();
+
+
+function page4Animation() {
+    gsap.to(".page4-mark", {
+        x: -1000,
+        scrollTrigger: {
+            trigger: "#page4",
+            scroller: "#main",
+            start: "top 150%",
+            end: "top -50%",
+            scrub: 2,
+            // markers:true
+        }
+    })
+
+    gsap.from(".page4-marking", {
+        x: -1000,
+        scrollTrigger: {
+            trigger: "#page4",
+            scroller: "#main",
+            start: "top 150%",
+            end: "top -50%",
+            scrub: 2,
+            // markers:true
+        }
+    })
+
+}
+
+page4Animation()
+
+
+
 
 function footerAnimation(){
         var footText = document.querySelectorAll("#footer .text");

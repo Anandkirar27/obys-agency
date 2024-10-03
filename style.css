@@ -322,24 +322,69 @@ body {
     z-index: 9999999 !important;
 }
 
-/* #page4{
+#page4{
     height: 100vh;
+    margin-top: 10vh;
     width: 100%;
     padding: 3vh 0;
    
 }
 
 .page4-mark{
-    background-color: red;
     white-space: nowrap;
     height: 17vh;
 }
 
+
+.page4-mark h2{
+    font-size: 6.9vw;
+    -webkit-text-stroke: 2px var(--secondary);
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    /* color: transparent; */
+}
+
+.page4-mark h3{
+    font-size: 6.9vw;
+    -webkit-text-stroke: 2px var(--secondary);
+    font-weight: 100;
+    /* color: transparent; */
+    font-family: "silk serif";
+    display: inline-block;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    text-transform: uppercase;
+}
+
 .page4-marking{
-    background-color: green;
-    white-space: nowrap;
     height: 17vh;
-} */
+    
+    white-space: nowrap;
+}
+
+.page4-marking h2{
+    font-size: 6.9vw;
+    -webkit-text-stroke: 2px var(--secondary);
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    /* color: transparent; */
+}
+.page4-marking h3{
+    font-size: 6.9vw;
+    -webkit-text-stroke: 2px var(--secondary);
+    font-weight: 100;
+    /* color: transparent; */
+    font-family: "silk serif";
+    display: inline-block;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    text-transform: uppercase;
+}
+
+
+
 
 #footer{
     height: 100vh;
